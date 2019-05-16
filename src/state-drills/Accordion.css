@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: rgb(131, 226, 221);
+    font-size: 18px;
+    margin: 10px 20px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    margin: 0 20px;
+    font-size: 16px;
+}
