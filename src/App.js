@@ -37,14 +37,14 @@ class App extends Component {
 
   searchHandler(searchTerm) {
     console.log('search run')
-    const currentSearchTerm = this.state.searchTerm;
-    console.log(currentSearchTerm);
+    // const currentSearchTerm = this.state.searchTerm;
+    // console.log(currentSearchTerm);
     const currentPrintFilter = (this.state.printOption === 'All') ? 'all' : this.state.printOption;
     const currentBookFilter = this.state.bookOption;
     
     const URL = (currentBookFilter === 'All') 
-      ? ('https://www.googleapis.com/books/v1/volumes?q=' + currentSearchTerm + '&printType=' + currentPrintFilter + '&key=AIzaSyBHJyD9bkL5L5bLPM6gz3eUHadelcqaqto')
-      : ('https://www.googleapis.com/books/v1/volumes?q=' + currentSearchTerm + '&printType=' + currentPrintFilter + '&filter=' + currentBookFilter + '&key=AIzaSyBHJyD9bkL5L5bLPM6gz3eUHadelcqaqto');
+      ? ('https://www.googleapis.com/books/v1/volumes?q=' + searchTerm + '&printType=' + currentPrintFilter + '&key=AIzaSyBHJyD9bkL5L5bLPM6gz3eUHadelcqaqto')
+      : ('https://www.googleapis.com/books/v1/volumes?q=' + searchTerm + '&printType=' + currentPrintFilter + '&filter=' + currentBookFilter + '&key=AIzaSyBHJyD9bkL5L5bLPM6gz3eUHadelcqaqto');
     fetch(URL)
       .then(response => response.json())
       .then(data => {

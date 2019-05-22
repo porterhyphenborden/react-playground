@@ -20,12 +20,12 @@ class SearchForm extends Component {
             <input type="text" name="searchTerm" id="searchTerm" placeholder="Unicorns" />
             <label htmlFor="printType">Print Type:</label>
             <select id="printType" name="printType" onChange={e => this.props.handlePrintFilterChange(e.target.value)}>
-                <option value="None">All</option>
+                <option value="All">All</option>
                 {printOptions}
             </select>
             <label htmlFor="bookType">Book Type:</label>
             <select id="bookType" name="bookType" onChange={e => this.props.handleBookFilterChange(e.target.value)}>
-                <option value="None">All</option>
+                <option value="All">All</option>
                 {bookOptions}
             </select>
             <button type="submit">Search</button>

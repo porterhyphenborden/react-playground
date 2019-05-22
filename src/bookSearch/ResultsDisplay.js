@@ -11,9 +11,9 @@ class ResultsDisplay extends Component {
                 <Result 
                     key={i}
                     title={bookList[i].volumeInfo.title}
-                    // author={bookList[i].volumeInfo.authors[0]}
+                    author={bookList[i].volumeInfo.authors ? bookList[i].volumeInfo.authors[0] : ''}
                     description={bookList[i].volumeInfo.description}
-                    URL={bookList[i].selfLink}
+                    URL={bookList[i].volumeInfo.infoLink}
                     imageLink={bookList[i].volumeInfo.imageLinks.smallThumbnail}
                 />
             )

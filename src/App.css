@@ -1,13 +1,56 @@
-.App {
-    margin: 40px;
+* {
+    box-sizing: border-box;
 }
 
-.left {
-    background-color: darkslategray;
-    color: azure;
+.App {
+    width: 100%;
 }
-  
-.right {
-    background-color: wheat;
-    color: firebrick;
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 130px;
+    font-size: 32px;
+    padding: 40px 0;
+    margin: 0;
 }
+
+form {
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+label, input, select {
+    margin: 5px;
+    height: 24px;
+}
+
+button {
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 30px 10px;
+    display: flex;
+}
+
+img {
+    margin-right: 16px;
+    width: 120px;
+    height: auto;
+    align-self: flex-start;
+}
+
+input[type=text] {
+    width: 180px;
+}
+
